@@ -44,7 +44,12 @@ namespace WeatherApp.ViewModel
             { 
                 _selectedCity = value;
                 OnPropertyChanged("SelectedCity");
-                GetCurrentConditions();
+
+                City emptyCity = new City();
+                if (_selectedCity != null && _selectedCity != emptyCity)
+                {
+                    GetCurrentConditions();
+                }
             }
         }
 
