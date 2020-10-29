@@ -12,7 +12,7 @@ namespace WeatherApp.ViewModel.Helpers
 {
     public class AccuWeatherHelper
     {
-        public const string API_KEY = "stebfaO5iVUoLRb5nL8SbTAJWNMa4smG";
+        public const string API_KEY = "a2GOAPGjgfXcfuf5DaW0CdHL4r47NGyt";
         public const string BASE_URL = "http://dataservice.accuweather.com/";
         public const string AUTOCOMPLETE_ENDPOINT = "locations/v1/cities/autocomplete?apikey={0}&q={1}";
         public const string CURRENTCONDITIONS_ENDPOINT = "currentconditions/v1/{0}?apikey={1}";

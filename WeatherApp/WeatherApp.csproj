@@ -73,6 +73,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Command\ClearCommand.cs" />
     <Compile Include="Command\SearchCommand.cs" />
     <Compile Include="Converter\BoolToRainConverter.cs" />
     <Compile Include="ViewModel\Helpers\AccuWeatherHelper.cs" />

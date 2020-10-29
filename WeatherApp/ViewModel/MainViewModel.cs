@@ -49,6 +49,7 @@ namespace WeatherApp.ViewModel
         }
 
         public SearchCommand SearchCommand { get; set; }
+        public ClearCommand ClearCommand { get; set; }
 
         public MainViewModel()
         {
@@ -63,6 +64,7 @@ namespace WeatherApp.ViewModel
             }
 
             SearchCommand = new SearchCommand(this);
+            ClearCommand = new ClearCommand(this);
             Cities = new ObservableCollection<City>();
         }
 
@@ -88,8 +90,6 @@ namespace WeatherApp.ViewModel
 
         private async void GetCurrentConditions()
         {
-            QueryTextBox = string.Empty;
-            Cities.Clear();
             CurrentConditions = await AccuWeatherHelper.GetCurrentConditions(SelectedCity.Key);
         }
     }
